@@ -1,0 +1,8 @@
+mixin info(detail)
+   div
+      h4=detail.title
+      ul
+        li #{detail.rating}/5
+        li #{detail.comments} comments.
+        li Posted #{detail.createAt}.
+        li #{detail.views} views.

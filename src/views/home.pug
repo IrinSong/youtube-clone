@@ -1,4 +1,9 @@
-extends base.pug
+extends base
+include mixins/video
 
 block content
-  h1 Home
+  h2 Welcome here you see the trending videos.
+  each video in videos
+    +info(video)
+  else // length=0 이면
+    li Sorry nothing found.
